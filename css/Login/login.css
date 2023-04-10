@@ -33,10 +33,10 @@
 .formContent input::placeholder {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     color: #868696;
-
+    padding-left: 1rem;
 }
 
 .btnLogin {
