@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="./css/Ferias.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <div>
+    <h1 id="titulo">1º Périodo</h1>
+    <p id="subtitulo">Insira suas informações!</p>
+  </div> -->
+  <form class="form">
+    <h2>1º Périodo</h2>
+    <input type="text" placeholder="Nome" class="input-field">
+    <br>
+    <input type="password" placeholder="Matricula" class="input-field">
+    <br>
+    <label>
+      <span>Data de Inicio</span>
+      <input type="date" placeholder="Data de Inicio" class="input-field">
+    </label>
+    <br>
+    <label>
+      <span>Data de Término</span>
+      <input type="date" placeholder="Data de Término" class="input-field">
+    </label>
+    <br>
+    <textarea name="msg" id="msg" cols="45" rows="10" placeholder="Motivo"></textarea>
+    <br><br>
+    <button type="submit" class="btn" id="btnEnviar">Solicitar</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
+
+  <!-- Inclua o arquivo do jQuery (se necessário) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Adicione um ouvinte de evento ao botão do formulário
+      $("#btnEnviar").on("click", function (event) {
+        event.preventDefault(); // Previne o envio do formulário
+
+        // Exibe a mensagem de sucesso usando o SweetAlert2
+        Swal.fire({
+          title: "Sucesso!",
+          text: "Seu formulário foi enviado com sucesso.",
+          icon: "success",
+          confirmButtonText: "OK"
+        });
+      });
+    });
+  </script>
+
+
+  <!-- <script src="assets/js/sweetalert2.js"></script>
+  <script src="assets/js/inicial.js"></script> -->
+</body>
+
+</html>
