@@ -27,3 +27,7 @@
 }
 
 
+.activeItem path{
+    fill: #2D1CC6 !important;
+    stroke: #2D1CC6 !important;
+}

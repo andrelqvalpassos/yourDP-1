@@ -1,15 +1,51 @@
 .form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 45px;
-  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  width: calc(100vw - 2rem);
+  
 }
 
 .input-field {
-  display: block;
+  background: #F7F7F9;
+  border-radius: 14px;
+
+  width: 335px;
+  height: 56px;
+
+  padding-left: 1rem;
+}
+
+.divInput{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFerias{
+  background: #F7F7F9;
+  border-radius: 14px;
+
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+.inputFerias h1{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  color: #868696;
 }
 
 input::placeholder {
@@ -18,7 +54,7 @@ input::placeholder {
   font-size: 16px;
   line-height: 14px;
   color: #868696;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .btn {

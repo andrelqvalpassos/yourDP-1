@@ -35,7 +35,17 @@
     font-size: 12px;
 }
 
-.active{
-    fill: aqua;
-    stroke: aqua;
+
+
+
+.activeItem span a{
+    color: #2D1CC6 !important;
+    font-weight: 700;
+}
+
+.activeItem svg {
+    fill: #2D1CC6;
+}
+.activeItem svg path{
+    stroke: #2D1CC6;
 }

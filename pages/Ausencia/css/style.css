@@ -1,23 +1,63 @@
 
 
-.container{
+.form{
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
+
+  gap: 1rem;
+
+  width: calc(100vw - 2rem);
+}
+
+
+
+.inputDate{
+  background: #F7F7F9;
+  border-radius: 14px;
+
+  width: 100%;
+  height: 56px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.inputDate select{
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.inputDateFerias{
+  width: calc(100vw - 8rem);
 }
 
 
 
 
 
-
-
-
-
-
-
-
+.btn {
+  display: block;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 335px;
+  height: 56px;
+  background: #2D1CC6;
+  border-radius: 16px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
 
 
 

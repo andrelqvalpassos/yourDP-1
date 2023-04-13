@@ -38,28 +38,12 @@
   <div class="container">
 
 
-    <form action="">
-      <div class="containName">
-        <div class="col-25">
-          <label for="fname">Nome</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="firstname" placeholder="Digite seu nome.." required>
-        </div>
-      </div>
-      <div class="containName">
-        <div class="col-25">
-          <label for="lname">Sobrenome</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="lname" name="lastname" placeholder="Digite seu sobrenome.." required>
-        </div>
-      </div>
-      <div class="contentJust">
+    <form class="form">
+      <div >
         <div class="col-25">
           <label for="country">Justificativa</label>
         </div>
-        <div class="col-75">
+        <div class="inputDate">
           <select id="country" name="country">
             <option value="ponto">Selecione</option>
             <option value="ajuste no banco de horas">Ajuste no banco de horas</option>
@@ -72,25 +56,32 @@
           </select>
         </div>
       </div>
-      <div class="contentObs">
+      
+      <div class="inputDateFerias" inputDate"">
+        <div id="data"><label for="data">Data de Solicitação</label>
+        </div>
+        <input class="inputDate" type="date" id="data" name="data">
+      </div>
+      
+      <div class="inputDateFerias">
         <div class="col-25">
           <label for="subject">Observação</label>
         </div>
-        <div class="col-75">
-          <textarea id="subject" name="subject" placeholder="Digite aqui..." style="height:200px"></textarea>
+        <div class="obs">
+          <textarea id="subject" name="subject" placeholder="Digite aqui..." style="width: 300px; height: 200px"></textarea>
         </div>
       </div>
-      <br>
+      
 
       <div class="search">
         <input name="arquivos[]" type=file multiple id="file" />
 
 
       </div>
-      <br><br>
+      
 
       <div class="send">
-        <button type="submit" onclick="alert()">Enviar</button>
+        <button class="btn" type="submit" id="btnEnviar">Enviar</button>
       </div>
     </form>
   </div>
@@ -127,7 +118,7 @@
           <span><a href="/pages/Ferias/Ferias.html">Férias</a></span>
         </li>
 
-        <li class="itemMenu">
+        <li class="itemMenu activeItem">
           <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="svgItem" fill-rule="evenodd" clip-rule="evenodd"
               d="M2.25012 3.5C2.25012 3.16848 2.38182 2.85054 2.61624 2.61612C2.85066 2.3817 3.1686 2.25 3.50012 2.25H14.7501C15.0816 2.25 15.3996 2.3817 15.634 2.61612C15.8684 2.85054 16.0001 3.16848 16.0001 3.5V12.2844C16.4264 12.3313 16.8458 12.4272 17.2501 12.57V3.5C17.2501 2.83696 16.9867 2.20107 16.5179 1.73223C16.049 1.26339 15.4132 1 14.7501 1H3.50012C2.83708 1 2.2012 1.26339 1.73235 1.73223C1.26351 2.20107 1.00012 2.83696 1.00012 3.5V18.5C1.00012 19.163 1.26351 19.7989 1.73235 20.2678C2.2012 20.7366 2.83708 21 3.50012 21H10.697C10.4367 20.6111 10.2261 20.1912 10.0701 19.75H3.50012C3.1686 19.75 2.85066 19.6183 2.61624 19.3839C2.38182 19.1495 2.25012 18.8315 2.25012 18.5V3.5Z"
@@ -149,7 +140,7 @@
 
 
 
-  
+
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 
