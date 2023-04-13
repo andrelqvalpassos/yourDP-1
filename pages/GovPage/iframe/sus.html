@@ -11,82 +11,35 @@
     <!--ICONSCOUT-->
 
     <!--STYLE-->
-    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="./css/GovPage.css">
     <!--STYLE-->
 
-    <title>Tela GOV</title>
+    <title>Iframe SUS</title>
 </head>
 
 <body>
 
     <div class="container">
 
-
         <div class="topBar">
 
-            <div class="contentUser">
-
-                <img src="./img/iconDefautlt.jpg" alt="">
-
-                <span>Breno</span>
+            <div onclick="voltar()" class="contentArrow">
+                <i class="uil uil-arrow-right"></i>
             </div>
-
-            <div class="contentInfo">
-                <i class="uil uil-bell"></i>
-            </div>
-
 
         </div>
-        
-        <div>
-            
-            <div class="icon-GOV">
-
-                <img src="./img/GOV.png" alt="Ícone GOV" class="iconGOV">
-
-            </div>
-
-            <div class="icons">
-
-                <section class="gridIcons">
-
-                    <a href="./iframe/clt.html"><img src="./img/CLT.png" alt="Ícone CLT" class="icon"></a>
-                    <strong>CLT</strong>
-                     
-                </section>
-
-                <section class="gridIcons">
-
-                    <a href="./iframe/inss.html"><img src="./img/INSS.png" alt="Ícone INSS" class="icon"></a>
-                    <strong>INSS</strong>
-
-                </section>
-
-            </div>
-
-            <div class="icons">
-
-                <section class="gridIcons">
-
-                    <a href="./iframe/sus.html"><img src="./img/SUS.png" alt="Ícone SUS" class="icon"></a>
-                    <strong>CONECTE SUS</strong>
-                     
-                </section>
-
-                <section class="gridIcons">
-
-                    <a href="./iframe/fgts.html"><img src="./img/FGTS.png" alt="Ícone FGTS" class="icon"></a>
-                    <strong>FGTS</strong>
-
-                </section>
-
-            </div>         
-
-        </div>
-
 
     </div>
+
+
+
+    <div>
+
+        <iframe src="https://conectesus.saude.gov.br/home" width="388" height="630"></iframe>
+
+    </div>
+
 
 
     <div class="bottomBar">
@@ -100,7 +53,7 @@
                             d="M8.13478 19.7733V16.7156C8.13478 15.9351 8.77217 15.3023 9.55844 15.3023H12.4326C12.8102 15.3023 13.1723 15.4512 13.4393 15.7163C13.7063 15.9813 13.8563 16.3408 13.8563 16.7156V19.7733C13.8539 20.0978 13.9821 20.4099 14.2124 20.6402C14.4427 20.8705 14.756 21 15.0829 21H17.0438C17.9596 21.0024 18.8388 20.6428 19.4872 20.0008C20.1356 19.3588 20.5 18.487 20.5 17.5778V8.86686C20.5 8.13246 20.1721 7.43584 19.6046 6.96467L12.934 1.67587C11.7737 0.748562 10.1111 0.778502 8.98539 1.74698L2.46701 6.96467C1.87274 7.42195 1.51755 8.12064 1.5 8.86686V17.5689C1.5 19.4639 3.04738 21 4.95617 21H6.87229C7.55123 21 8.103 20.4562 8.10792 19.7822L8.13478 19.7733Z"
                             stroke="#9E9E9E" stroke-width="2" />
                     </svg>
-                    <span><a href="/pages/Home/Home.html">Home</a></span>
+                    <span><a href="#">Home</a></span>
                 </li>
 
                 <li>
@@ -109,7 +62,7 @@
                             d="M25.3126 8.67188H6.56262C6.25182 8.67188 5.95375 8.54841 5.73398 8.32864C5.51421 8.10887 5.39075 7.8108 5.39075 7.5C5.39075 7.1892 5.51421 6.89113 5.73398 6.67136C5.95375 6.45159 6.25182 6.32812 6.56262 6.32812H22.5001C22.6866 6.32812 22.8654 6.25405 22.9973 6.12218C23.1292 5.99032 23.2032 5.81148 23.2032 5.625C23.2032 5.43852 23.1292 5.25968 22.9973 5.12782C22.8654 4.99595 22.6866 4.92188 22.5001 4.92188H6.56262C5.87886 4.92188 5.2231 5.1935 4.73961 5.67699C4.25612 6.16048 3.9845 6.81624 3.9845 7.5V22.5C3.9845 23.1838 4.25612 23.8395 4.73961 24.323C5.2231 24.8065 5.87886 25.0781 6.56262 25.0781H25.3126C25.7477 25.0781 26.165 24.9053 26.4727 24.5976C26.7804 24.2899 26.9532 23.8726 26.9532 23.4375V10.3125C26.9532 9.87738 26.7804 9.46008 26.4727 9.1524C26.165 8.84473 25.7477 8.67188 25.3126 8.67188ZM25.547 23.4375C25.547 23.4997 25.5223 23.5593 25.4783 23.6032C25.4344 23.6472 25.3748 23.6719 25.3126 23.6719H6.56262C6.25182 23.6719 5.95375 23.5484 5.73398 23.3286C5.51421 23.1089 5.39075 22.8108 5.39075 22.5V9.7957C5.75332 9.9818 6.15508 10.0786 6.56262 10.0781H25.3126C25.3748 10.0781 25.4344 10.1028 25.4783 10.1468C25.5223 10.1907 25.547 10.2503 25.547 10.3125V23.4375ZM22.2657 16.4062C22.2657 16.638 22.197 16.8646 22.0683 17.0573C21.9395 17.25 21.7565 17.4002 21.5423 17.4889C21.3282 17.5776 21.0926 17.6008 20.8653 17.5556C20.6379 17.5104 20.4291 17.3988 20.2652 17.2349C20.1013 17.071 19.9897 16.8622 19.9445 16.6349C19.8993 16.4075 19.9225 16.1719 20.0112 15.9578C20.0999 15.7437 20.2501 15.5606 20.4428 15.4319C20.6355 15.3031 20.8621 15.2344 21.0939 15.2344C21.4047 15.2344 21.7027 15.3578 21.9225 15.5776C22.1423 15.7974 22.2657 16.0954 22.2657 16.4062Z"
                             fill="#9E9E9E" stroke="#9E9E9E" stroke-width="0.5" />
                     </svg>
-                    <span><a href="/pages/GovPage/Gov.html">GOV</a></span>
+                    <span><a href="#">GOV</a></span>
                 </li>
 
                 <li>
@@ -134,12 +87,20 @@
                             fill="#9E9E9E" stroke="#9E9E9E" />
                     </svg>
 
-                    <span><a href="/pages/Ausencia/Ausencia.html">Ausências</a></span>
+                    <span><a href="#">Ausências</a></span>
                 </li>
             </ul>
         </nav>
 
     </div>
+
+
+    <script>
+        function voltar() {
+          window.location.href = "./../Gov.html";
+        }
+      </script>
+
 
 </body>
 

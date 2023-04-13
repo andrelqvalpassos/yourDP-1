@@ -57,3 +57,16 @@
     padding: 0.3rem;
     border-radius: 100px;
 }
+
+.contentArrow{
+    width: 44px;
+    height: 44px;
+    background-color: #f7f7f9; 
+    border-radius: 100px;
+    place-items: center;
+    display: grid;
+    padding: 0.3rem;
+    font-size: 25px; 
+    transform: rotate(180deg);
+    margin-bottom: -15px;
+}

@@ -1,0 +1,50 @@
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 45px;
+  background-color: #f1f1f1;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  color: #868696;
+  padding-left: 1rem;
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 335px;
+  height: 56px;
+  background: #2D1CC6;
+  border-radius: 16px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+h2 {
+  text-align: center;
+  align-items: center;
+  color: #2D1CC6;
+}
+
+/* Estilos para tornar o formulário responsivo em telas menores */
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 10px;
+  }
+}
