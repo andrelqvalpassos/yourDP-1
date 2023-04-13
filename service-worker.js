@@ -8,10 +8,10 @@ const urlsToCache = [
 
   '/img/favicon.png',
   '/img/iconDefautlt.jpg',
-  '/img/logo.webp',
+  '/img/Logo.webp',
 
-  '/pages/Home/Home.html',
-  '/pages/Home/js/localCompany.js',
+  
+  
   
   
   
