@@ -1,5 +1,7 @@
 .contentForm{
   width: calc(100vw - 2rem);
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-bottom: 75px;
 }
 
