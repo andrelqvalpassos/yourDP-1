@@ -14,8 +14,8 @@ function handleSubmit(event) {
             {
                 nome: 'Carlão',
                 dia: dateString,
-                hora: timeString
-            
+                entrada: timeString,
+                saida: ""
             }
         )
 

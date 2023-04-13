@@ -38,17 +38,17 @@ window.onload = function () {
 
 
 
-//MODAL 
-const meuBotao = document.getElementById('button_user');
+// //MODAL 
+// const meuBotao = document.getElementById('button_user');
 
-meuBotao.addEventListener('click', () => {
-  Swal.fire({
-    title: 'Olá!',
-    text: 'Você clicou no botão!',
-    icon: 'success',
-    confirmButtonText: 'Ok'
-  })
-});
+// meuBotao.addEventListener('click', () => {
+//   Swal.fire({
+//     title: 'Olá!',
+//     text: 'Você clicou no botão!',
+//     icon: 'success',
+//     confirmButtonText: 'Ok'
+//   })
+// });
 
 
 //ITEM ACTIVE
