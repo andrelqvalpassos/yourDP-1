@@ -6,68 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--ICONSCOUT-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <!--ICONSCOUT-->
+    <link rel="stylesheet" href="./style.css">
 
-    <!--STYLE-->
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./../../css/main.css">
-    <!--STYLE-->
+    <title>Relatorio</title>
 
-    <!-- Import do CSS do Leaflet -->
-    <link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.min.css" rel="stylesheet">
-
-    <!--NOTYF-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
-
-    <!--SWEETALERT-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
-
-    <title>Tela principal</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
+    <div class="topBar">
+
+        <div class="contentUser">
+
+            <img src="/img/iconDefautlt.jpg" alt="">
+
+            <span>Breno</span>
+        </div>
+
+        <div class="contentInfo">
+            <i class="uil uil-bell"></i>
+        </div>
+
+
+    </div>
+
 
     <div class="container">
 
-        <form action="">
 
-
-            <div class="topBar">
-
-                <div class="contentUser">
-
-                    <img src="./../../img/iconDefautlt.jpg" alt="">
-
-                    <span>Breno</span>
-                </div>
-
-                <div class="contentInfo">
-                    <i class="uil uil-bell"></i>
-                </div>
-
-
-            </div>
-
-            <div class="mapContainer">
-
-                <div id="map"></div>
-
-            </div>
-
-            <div class="contentPoint">
-
-                <h1 class="titlePoint"><span id="dateContent">xx/xx/xxxx </span> - <span id="clockContent"> x:xx</span>
-                </h1>
-                <button id="button_user" class="submitPoint">Bater Ponto</button>
-                <a class="relatorio" href="/pages/Home/features/relatorios.html"><h2 class="titlePoint linkPoint">Últimos Registros <i class="uil uil-arrow-down"></i></h2></a> 
-
-            </div>
-
-
-
-        </form>
+        <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlDnsoYQm41SlNvNZZw8STLnuqSV702Sj6NTEvU790m7Kuy84dH0451sjDYrX-TWPXxicqEUb1l1Zg/pubhtml?gid=0&amp;single=false&amp;widget=true&amp;headers=false&rm=minimal"></iframe>
 
 
 
@@ -128,45 +96,8 @@
     </div>
 
 
-    <div class="bottomOptionBar ">
-        <ul class="listBottomSheet">
-
-            <li>
-                <div class="itemBottomSheet">
-                    <img src="./img/Faceid.png" alt="faceid">
-                    <h1>Reconhecimento Facial</h1>
-                </div>
-
-            </li>
-
-            <li>
-                <div class="itemBottomSheet">
-                    <img src="./img/digitalicon.png" alt="digitalicon">
-                    <h1>Biometria Digital</h1>
-                </div>
-            </li>
-
-            <li>
-                <div class="itemBottomSheet">
-                    <img src="./img/voiceicon.png" alt="voiceicon">
-                    <h1>Reconhecimento Facial</h1>
-                </div>
-
-            </li>
-
-        </ul>
-    </div>
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script> -->
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.min.js"></script>
-    <script src="./js/localCompany.js"></script>
-    <script src="./js/mapFunction.js"></script>
-    <script src="./js/sheetDate.js"></script>
-
-    
 </body>
 
 </html>

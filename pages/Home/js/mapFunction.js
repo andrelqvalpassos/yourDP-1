@@ -34,7 +34,7 @@ if (navigator.geolocation) {
         var fixedLocation = L.latLng(LOCAL_COMPANY.lat, LOCAL_COMPANY.long);
         var userLocation = L.latLng(latitude, longitude);
 
-        if (fixedLocation.distanceTo(userLocation) <= 100) {
+        if (fixedLocation.distanceTo(userLocation) <= 1000) {
             // O usuário está dentro do raio de 100 metros do ponto fixo
             let userButton = document.getElementById("button_user");
             userButton.disabled = false;
