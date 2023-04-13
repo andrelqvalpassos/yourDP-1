@@ -1,9 +1,6 @@
 .contentForm{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: calc(100vw - 2rem);
+  
+  
   
   padding-bottom: 75px;
 }
@@ -17,7 +14,7 @@
 
   gap: 1rem;
 
-  width: calc(100vw - 4rem);
+  width: calc(100vw - 2rem);
   
 }
 
@@ -25,7 +22,7 @@
   background: #F7F7F9;
   border-radius: 14px;
 
-  width: 335px;
+  width: 235px;
   height: 56px;
 
   padding-left: 1rem;
@@ -40,7 +37,7 @@
   background: #F7F7F9;
   border-radius: 14px;
 
-  width: 100%;
+  width: 70%;
   height: 56px;
 
   display: flex;
