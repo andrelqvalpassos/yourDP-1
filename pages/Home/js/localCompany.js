@@ -1,5 +1,5 @@
 const LOCAL_COMPANY = {
-    lat: -8.0523285,
+    lat: -8.0490114,
     long: -34.8824806
 }
 
