@@ -1,6 +1,6 @@
 const LOCAL_COMPANY = {
-    lat: -7.9396864,
-    long: -34.8684288
+    lat: -8.0523285,
+    long: -34.8824806
 }
 
 
