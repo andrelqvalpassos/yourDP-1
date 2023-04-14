@@ -18,3 +18,10 @@
 
 ## Link Figma
 (https://www.figma.com/file/48S8A691ts9008aX59dcyJ/YourDP?node-id=0%3A1&t=yE3pgSR4NKP8Nbng-1)
+
+# Telas Principais
+<div>
+  <span>
+    <img src="" hight="497px" />
+  </span>
+ </div>
