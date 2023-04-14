@@ -104,8 +104,8 @@ btnSaida.addEventListener("click", () => {
 var currentTimeString = new Date().toLocaleTimeString('pt-BR', {hour12: false});
 
 
-var minTimeString = "00:20:00"
-var maxTimeString = "00:30:00";
+var minTimeString = "09:00:00"
+var maxTimeString = "12:30:00";
 
 if(currentTimeString >= minTimeString && currentTimeString <= maxTimeString){
     document.getElementById("button_userSaida").disabled = false;
