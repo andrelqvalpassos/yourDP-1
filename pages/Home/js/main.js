@@ -12,6 +12,8 @@ function updateTime() {
     seconds = seconds < 10 ? "0" + seconds : seconds;
     timeString = hours + ":" + minutes;
     document.getElementById("clockContent").innerHTML = timeString;
+    document.getElementById("clockContentModalEntrada").innerHTML = timeString;
+    document.getElementById("clockContentModalSaida").innerHTML = timeString;
 }
 
 
@@ -27,6 +29,8 @@ function updateDate() {
     month = month < 10 ? "0" + month : month;
     dateString = day + "/" + month + "/" + year;
     document.getElementById("dateContent").innerHTML = dateString;
+    document.getElementById("dateContentModalEntrada").innerHTML = dateString;
+    document.getElementById("dateContentModalSaida").innerHTML = dateString;
 }
 
 window.onload = function () {
@@ -34,103 +38,82 @@ window.onload = function () {
     updateDate();
     setInterval(updateTime, 1000);
     setInterval(updateDate, 86400000); // atualiza a data a cada 24 horas
+
 };
 
 
 
-// //MODAL 
-// const meuBotao = document.getElementById('button_user');
+//SAIDA CONFIG
 
-// meuBotao.addEventListener('click', () => {
-//   Swal.fire({
-//     title: 'Olá!',
-//     text: 'Você clicou no botão!',
-//     icon: 'success',
-//     confirmButtonText: 'Ok'
-//   })
-// });
+// const saida = "22:28"
 
+// updateTime();
 
-//ITEM ACTIVE
-
-// let menuItem = document.querySelectorAll(".itemMenu");
+// if(timeString !== saida) {
+//     document.getElementById("saidaBtn").disabled = true;
+// } else{
+//     document.getElementById("saidaBtn").disabled = false;
+// } 
 
 
+//MODAL 
 
-// menuItem.forEach((item) => {
+let btnPoint = document.getElementById("button_user");
 
+btnPoint.addEventListener("click", () => {
+    document.getElementById("modalPoint").classList.add("showModal");
+})
 
-//     item.addEventListener("click", () => {
-//         let menuSvg = document.querySelectorAll(".svgItem");
+let iconClose = document.getElementById("iconClose");
 
-//         menuSvg.forEach((item) => {
-//             item.addEventListener("click", () => {
-//                 item.classList.add("active")
-//             })
-//         })
-//     })
-
-
+iconClose.addEventListener("click", () => {
+    document.getElementById("modalPoint").classList.remove("showModal");
+})
 
 
-// })
+//NOTIFICATION
+
+let btnEntrada = document.getElementById("button_userEntrada");
+
+btnEntrada.addEventListener("click", () => {
+    var notyf = new Notyf({
+        position: {
+            x: 'right',
+            y: 'top',
+        }
+    });
+    notyf.success('Ponto cadastrado');
+})
+
+let btnSaida = document.getElementById("button_userSaida");
+
+btnSaida.addEventListener("click", () => {
+    var notyf = new Notyf({
+        position: {
+            x: 'right',
+            y: 'top',
+        }
+    });
+    notyf.success('Ponto cadastrado');
+})
 
 
-//BOTTOMSHEET
 
-// const bottomSheet = document.querySelector('.bottomOptionBar');
+//SAIDA BLOCK  
 
-// const openButton = document.querySelector('#button_user');
+var currentTimeString = new Date().toLocaleTimeString('pt-BR', {hour12: false});
 
-// let isDragging = false;
-// let startY = 0;
-// let currentY = 0;
-// let lastY = 0;
-// let bottomSheetHeight = bottomSheet.clientHeight;
 
-// // Função para atualizar a posição do bottom sheet
-// function updatePosition(y) {
-//     let diff = lastY - y;
-//     currentY = Math.max(Math.min(currentY - diff, 0), -bottomSheetHeight);
-//     bottomSheet.style.bottom = currentY + 'px';
-//     lastY = y;
-// }
+var minTimeString = "00:20:00"
+var maxTimeString = "00:30:00";
 
-// // Evento de início do arraste
-// handle.addEventListener('mousedown', function (e) {
-//     isDragging = true;
-//     startY = e.clientY;
-//     lastY = startY - currentY;
-// });
+if(currentTimeString >= minTimeString && currentTimeString <= maxTimeString){
+    document.getElementById("button_userSaida").disabled = false;
+    document.getElementById("button_userSaida").style.backgroundColor = "#2D1CC6"
+} else {
+    document.getElementById("button_userSaida").disabled = true;
+    document.getElementById("button_userSaida").style.backgroundColor = "#a9a9a9"
+    
+}
 
-// // Evento de fim do arraste
-// document.addEventListener('mouseup', function () {
-//     if (isDragging) {
-//         isDragging = false;
-//         if (currentY < -bottomSheetHeight / 2) {
-//             bottomSheet.classList.add('open');
-//             currentY = -bottomSheetHeight;
-//         } else {
-//             bottomSheet.classList.remove('open');
-//             currentY = 0;
-//         }
-//     }
-// });
 
-// // Evento de arraste
-// document.addEventListener('mousemove', function (e) {
-//     if (isDragging) {
-//         updatePosition(e.clientY);
-//     }
-// });
-
-// // Atualiza a altura do bottom sheet quando a tela é redimensionada
-// window.addEventListener('resize', function () {
-//     bottomSheetHeight = bottomSheet.clientHeight;
-// });
-
-// // Evento de clique no botão
-// openButton.addEventListener('click', function () {
-//     bottomSheet.classList.add('open');
-//     currentY = -bottomSheetHeight;
-// });

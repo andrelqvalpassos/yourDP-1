@@ -2,7 +2,7 @@
 /* @import url('./topBar.css');
 @import url('./bottomBar.css'); */
 @import url('./bottomSheet.css');
-
+@import url('./modal.css');
 
 /* body {
     margin: 0;
@@ -26,6 +26,10 @@ ol {
 button {
     outline: none;
 } */
+
+body{
+    overflow-x: hidden;
+}
 
 #map {
     height: 400px;

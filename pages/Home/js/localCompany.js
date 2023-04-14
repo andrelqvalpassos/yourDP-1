@@ -1,6 +1,12 @@
 const LOCAL_COMPANY = {
-    lat: -8.052849,
-    long: -34.8858826
+    lat: -8.0523285,
+    long:-34.8824806
+}
+
+
+const HOUR_COMPANY = {
+    min: "23:50",
+    max: "23:00"
 }
 
 
