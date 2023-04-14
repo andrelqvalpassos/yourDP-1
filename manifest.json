@@ -200,8 +200,8 @@
       "type": "image/png"
     },
     {
-      "src": "img/icons/ios/128.png",
-      "sizes": "128x128",
+      "src": "/img/favicon.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     }
