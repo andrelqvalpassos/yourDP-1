@@ -200,8 +200,8 @@
       "type": "image/png"
     },
     {
-      "src": "img/icons/icon-any-512-512.png",
-      "sizes": "512x512",
+      "src": "img/icons/ios/128.png",
+      "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     }
