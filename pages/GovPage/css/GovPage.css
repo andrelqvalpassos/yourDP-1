@@ -1,17 +1,21 @@
+.container{
+    padding-bottom: 77px;
+}
 
 .icon-GOV {
     text-align: center;
-    margin-top: -20px;
+    margin-top: -7vw;
+    margin-bottom: -6vw;
 }
 
 .iconGOV {
-    width:145px;
+    width:35vw;
 }
 
 .icons {
     display: flex;
     justify-content: space-around;
-    margin-top: 35px;
+    margin-top: 8vw;
 }
 
 .gridIcons {
@@ -22,8 +26,8 @@
 }
 
 .icon {
-    width: 135px;
-    margin-bottom: 8px;
+    width: 33vw;
+    margin-bottom: 1vw;
 }
 
 

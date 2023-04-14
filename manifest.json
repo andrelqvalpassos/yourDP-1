@@ -1,0 +1,25 @@
+{
+    "background_color": "#ffffff",
+    "description": "o seu RH na sua mao",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "yourDP",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "yourDP",
+    "start_url": "/",
+    "theme_color": "#ffffff",
+    "categories": [
+      "RH",
+      "WEBAPP" 
+    ],
+    "screenshots": [],
+    "icons": [
+      {
+        "src": "/img/favicon.png",
+        "sizes": "512x512"
+      }
+    ],
+    "splash_pages": null,
+    "shortcuts": []
+  }
